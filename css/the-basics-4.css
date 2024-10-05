@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+
+body {
+
+    background-color: #FFDEE3;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 18px;
+
+}
+
+.container {
+
+    max-width: 960px;
+    margin: 0 auto;
+
+}
+
+p {
+
+    /* super important */
+    line-height: 1.5em;
+
+    margin-bottom: 1.8em;
+
+}
+
+
+
+#DVD-VHS {
+
+    float: left;
+    margin-left: 0;
+
+}
+
+aside p {
+
+    margin-bottom: 0.8em;
+    font-size: 0.9em;
+
+}
+
+#img-DVD-VHS {
+
+    width: 450px;
+    height: auto;
+
+}
+
+#voice-cast li {
+
+    /*font-size: 14px;
+    margin-left: 10px;*/
+    list-style-type: disc;
+    padding: 5px;
+
+}
+
+#voice-cast ul {
+
+    margin: 0px;
+
+}
+
+#songs li {
+
+    /*font-size: 14px;
+    margin-left: 10px;*/
+    list-style-type: decimal;
+    padding: 5px;
+
+}
+
+#awards li {
+
+    /*font-size: 14px;
+    margin-left: 10px;*/
+    list-style-type: disc;
+    padding: 5px;
+
+}
+
+#awards ul {
+
+    margin: 0px;
+
+}
+
+#external-links li {
+
+    /*font-size: 14px;
+    margin-left: 10px;*/
+    list-style-type: disc;
+    padding: 5px;
+
+}
+
+
+
+
+
+h1,
+h2,
+h3 {
+
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+h1 {
+
+    font-size: 2em;
+
+}
+
+h2 {
+
+    font-size: 1.6em;
+    background-color: #dbad8f;
+    padding: 6px;
+
+}
+
+h3 {
+
+    font-size: 1.3em;
+
+}
+
+
+
+
+nav ul li {
+
+    list-style: none;
+
+}
+
+nav ul a {
+
+    text-decoration: none;
+    /*font-size: 1.8em;*/
+    margin: 10px;
+
+}
+
+
+
+
+/*nav ul li a:link {
+
+    color: black;
+
+}
+
+nav ul li a:visited {
+
+    color: black;
+
+}
+
+nav ul li a:hover {
+
+    color: white;
+    background: black;
+
+}
+
+nav ul li a:active {
+
+    color: yellow;
+
+}*/
+
+a:link {
+
+    color: black;
+
+}
+
+a:visited {
+
+    color: #2C0864;
+
+}
+
+a:hover {
+
+    background: #dbad8f;
+
+}
+
+a:active {
+
+    color: #992667;
+
+}
+
+
+
+
+
+/* Hide only visually, but have it available for screen readers: */
+
+.sr-only {
+    
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
+
+header {
+
+    padding-left: 6px;
+    background-color: #ad7f69;
+
+}
