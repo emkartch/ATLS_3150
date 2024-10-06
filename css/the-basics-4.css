@@ -52,7 +52,7 @@ aside p {
 
 }
 
-#voice-cast ul li {
+#voice-cast li:not(.sublist) {
 
     /*font-size: 14px;
     margin-left: 10px;*/
@@ -67,7 +67,7 @@ aside p {
 
 }
 
-#songs ul li {
+#songs li:not(.sublist) {
 
     /*font-size: 14px;
     margin-left: 10px;*/
@@ -76,7 +76,7 @@ aside p {
 
 }
 
-#awards ul li {
+#awards li:not(.sublist) {
 
     /*font-size: 14px;
     margin-left: 10px;*/
@@ -91,11 +91,20 @@ aside p {
 
 }
 
-#external-links ul li {
+#external-links li:not(.sublist) {
 
     /*font-size: 14px;
     margin-left: 10px;*/
     list-style-type: disc;
+    padding: 5px;
+
+}
+
+.sublist {
+
+    /*font-size: 14px;
+    margin-left: 10px;*/
+    list-style-type: none;
     padding: 5px;
 
 }
