@@ -52,7 +52,7 @@ aside p {
 
 }
 
-#voice-cast li {
+#voice-cast ul li {
 
     /*font-size: 14px;
     margin-left: 10px;*/
@@ -67,7 +67,7 @@ aside p {
 
 }
 
-#songs li {
+#songs ul li {
 
     /*font-size: 14px;
     margin-left: 10px;*/
@@ -76,7 +76,7 @@ aside p {
 
 }
 
-#awards li {
+#awards ul li {
 
     /*font-size: 14px;
     margin-left: 10px;*/
@@ -91,7 +91,7 @@ aside p {
 
 }
 
-#external-links li {
+#external-links ul li {
 
     /*font-size: 14px;
     margin-left: 10px;*/
