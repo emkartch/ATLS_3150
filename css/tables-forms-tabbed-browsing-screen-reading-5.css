@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* for skip-nav */
+    .skip-link {
+
+        background: black;
+        color: #fff;
+        font-weight: 700;
+        padding: 4px;
+        position: absolute;
+        transform: translate(-200%);
+
+    }
+
+    .skip-link:focus {
+
+        transform: translate(-100%);
+
+    }
+
+    .skip-link {
+
+        /* Same as before */
+        transition: transform 0.3s;
+
+    }
+
+body {
+
+    background: #401E14;
+
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 18px;
+
+}
+
+.container {
+
+    max-width: 960px;
+    margin: 0 auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    
+    padding-top: 1px;
+    padding-bottom: 1px;
+
+    background: white;
+
+}
+
+p {
+
+    /* super important */
+    line-height: 1.3em;
+
+    margin-bottom: 1.8em;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family: "Hanuman", serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+h1 {
+
+    font-size: 2em;
+
+}
+
+h2 {
+
+    font-size: 1.8em;
+
+}
+
+h3 {
+
+    font-size: 1.6em;
+
+}
+
+h4 {
+
+    font-size: 1.4em;
+
+}
+
+nav ul li {
+
+    list-style: none;
+
+}
+
+nav ul a {
+
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px;
+    vertical-align: middle;
+
+}
+
+.material-icons {
+
+    vertical-align: middle;
+    font-size: 1.4em;
+
+}
+
+nav ul li a:link {
+
+    color: black;
+
+}
+
+nav ul li a:visited {
+
+    color: black;
+
+}
+
+nav ul li a:hover {
+
+    color: white;
+    background: black;
+
+}
+
+nav ul li a:active {
+
+    color: yellow;
+
+}
+
+/* Hide only visually, but have it available for screen readers: */
+.sr-only {
+    
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+
+}
+
+
+mark {
+
+    background-color: #f9d1a6;
+
+}
+
+figure {
+
+    margin: 0px;
+
+}
+
+#about-figure {
+
+    margin-left: 130px;
+    margin-right: 130px;
+
+}
+
+#warning {
+
+    font-style: italic;
+
+}
+
+#img-stalactites {
+
+    width: 700px;
+    height: auto;
+
+}
+
+
+#img-tours {
+
+    width: 400px;
+    height: auto;
+
+}
+
+details {
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+/* for form */
+    input:focus {
+
+        background: black;
+        color: white;
+        border: 4px solid yellow;
+
+    }
+
+    input:valid {
+
+        border: 2px solid green;
+
+    }
+
+    input:invalid {
+
+        border: 1px dotted red;
+
+    }
+
+    label {
+
+        display: block;
+        margin-bottom: 10px;
+
+    }
+
+    /* Will target any field that is not 'submit' and is valid */
+    input:not([type="submit"]):valid {
+
+        border-color: green;
+        box-shadow: 0 0 3px green;
+
+    }
+
+    /* Hide and show list of inputRequirements when interacting with input */
+    input:not([type="submit"]) + .inputRequirements {
+
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 1s ease-out;
+
+    }
+
+    input:not([type="submit"]):hover + .inputRequirements,
+    input:not([type="submit"]):focus + .inputRequirements,
+    input:not([type="submit"]):active + .inputRequirements {
+
+        max-height: 1000px; /* Any large number (bigger then the .inputRequirements list) */
+        transition: max-height 1s ease-in;
+
+    }
+
+/* for tables */
+    table, th, td {
+
+        border-collapse: collapse;
+
+    }
+
+    caption {
+
+        margin-bottom: 10px;
+
+    }
+
+    th {
+
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+
+    td {
+
+        border-collapse: collapse;
+        border: 2px solid black;   
+        padding: 10px;     
+
+    }
