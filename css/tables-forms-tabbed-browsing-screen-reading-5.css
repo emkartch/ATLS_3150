@@ -180,7 +180,7 @@ figure {
 
 }
 
-#warning {
+.warning {
 
     font-style: italic;
 
@@ -194,7 +194,7 @@ figure {
 }
 
 
-#img-tours {
+.img-tours {
 
     width: 400px;
     height: auto;
