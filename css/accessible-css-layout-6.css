@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@700&family=Inconsolata:wght@200..900&display=swap');
+
+body {
+
+    background: white;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+}
+
+/* "famous" css reset */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+
+    font-family: "Caudex", serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: .2em 0;
+
+}
+
+h1 {
+
+    font-size: 2em;
+
+}
+
+h2 {
+
+    font-size: 1.8em; 
+
+}
+
+h3 {
+
+    margin: 0.8em 0;
+    font-size: 1.5em; 
+
+}
+
+h4 {
+
+    margin: 0.8em 0;
+    font-size: 1.2em; 
+
+}
+
+p {
+    margin: 0.8em 0;
+    line-height: 1.8em;
+}
+
+ul li {
+    margin-left: 0.8em;
+    margin-right: 0.8em;
+    line-height: 1.8em;
+}
+
+header, nav, main, aside, footer {
+    padding: 1.5em;
+    border: 1px black solid;
+}
+
+header, footer {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: lightgray;
+
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "heady      heady       heady"
+    "navvy      navvy       navvy"
+    "aside1     mainy       aside2"
+    "footy      footy       footy";
+}
+
+header {
+    grid-area: heady;
+    background: #e8662e;
+}
+
+nav {
+    grid-area: navvy;
+    background: #aed676;
+}
+
+main {
+    grid-area: mainy;
+    background: #e8de9b;
+    max-height: 100%;
+}
+
+#aside1 {
+    grid-area: aside1;
+    background: #94cf84;
+}
+
+#aside2 {
+    grid-area: aside2;
+    background: #94cf84;
+}
+
+footer {
+    grid-area: footy;
+    background: #e8662e;
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+@media screen and (min-width: 641px) and (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "heady heady"
+        "navvy navvy"
+        "mainy mainy"
+        "aside1 aside2"
+        "footy footy";
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "heady"
+        "navvy"
+        "mainy"
+        "aside1"
+        "aside2"
+        "footy";
+    }
+
+    nav ul {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+
+    /* thumbable */
+    nav ul li a {
+        display: block;
+        padding: 10px 5px;
+        margin: 5px;
+        border: 1px black solid;
+        background: white;
+    }
+}
+
+figure img {
+
+    height: auto;
+    width: 100px;
+
+}
+
+/* Hide only visually, but have it available for screen readers: */
+
+.sr-only {
+    
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
