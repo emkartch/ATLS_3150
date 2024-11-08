@@ -1,11 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,700&family=Lato:ital@0;1&display=swap');
+
+/* Hide only visually, but have it available for screen readers: */
+.sr-only {
+    
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
+
+/* for skip-nav */
+.skip-link {
+
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translate(-200%);
+
+}
+
+/* for skip-nav */
+.skip-link:focus {
+
+    transform: translate(-100%);
+
+}
+
+/* for skip-nav */
+.skip-link {
+
+    /* Same as before */
+    transition: transform 0.3s;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: lightgray;
+
+    display: grid;
+    width: 100vw;
+    /* height: 100vh; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "head      head       head"
+    "nav       nav        nav"
+    "main      main       aside"
+    "foot      foot       foot";
+}
+
+header, nav, main, aside, footer {
+    padding: 1.5em;
+    border: 1px black solid;
+}
+
+header {
+    grid-area: head;
+    background: lightcoral;
+}
+
+nav {
+    grid-area: nav;
+    background: lightseagreen;
+}
+
+main {
+    grid-area: main;
+    background: lightblue;
+    max-height: 100%;
+}
+
+#aside {
+    grid-area: aside;
+    background: lightgoldenrodyellow;
+}
+
+
+footer {
+    grid-area: foot;
+    background: lightsalmon;
+}
+
+body {
+
+    background-color: #FFDEE3;
+
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 18px;
+
+}
+
+p {
+
+    /* super important */
+    line-height: 1.5em;
+
+    margin-bottom: 1.8em;
+
+}
+
+header, footer {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+
+    font-family: "Alegreya", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+h1 {
+
+    font-size: 2em;
+
+}
+
 h2 {
 
-    font-size: 25px;
+    font-size: 1.6em;
+    padding: 6px;
 
 }
 
 h3 {
 
-    font-size: 20px;
+    font-size: 1.3em;
 
+}
+
+
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+
+    text-decoration: none;
+    /*font-size: 1.8em;*/
+    margin: 10px;
+
+}
+
+
+a:link {
+
+    color: black;
+
+}
+
+a:visited {
+
+    color: #2C0864;
+
+}
+
+a:hover {
+
+    background: #dbad8f;
+
+}
+
+a:active {
+
+    color: #992667;
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "head head"
+        "nav  nav"
+        "main main"
+        "aside aside"
+        "foot foot";
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "head"
+        "nav"
+        "main"
+        "aside"
+        "foot";
+    }
+
+    nav ul {
+        flex-flow: column nowrap;
+        text-align: center;
+    }
+
+    /* thumbable */
+    nav ul li a {
+        display: block;
+        padding: 10px 5px;
+        margin: 5px;
+        border: 1px black solid;
+        background: white;
+    }
 }
