@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,700&family=Lato:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,700;1,700&family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 /* Hide only visually, but have it available for screen readers: */
 .sr-only {
@@ -49,7 +49,7 @@
 
     display: grid;
     width: 100vw;
-    /* height: 100vh; */
+    height: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "head      head       head"
@@ -59,8 +59,15 @@
 }
 
 header, nav, main, aside, footer {
-    padding: 1.5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
     border: 1px black solid;
+}
+
+header, footer {
+    text-align: center;
 }
 
 header {
@@ -76,7 +83,6 @@ nav {
 main {
     grid-area: main;
     background: lightblue;
-    max-height: 100%;
 }
 
 #aside {
@@ -84,10 +90,17 @@ main {
     background: lightgoldenrodyellow;
 }
 
-
 footer {
     grid-area: foot;
     background: lightsalmon;
+}
+
+aside img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-bottom: 0.6em;
 }
 
 body {
@@ -105,14 +118,10 @@ body {
 p {
 
     /* super important */
-    line-height: 1.5em;
+    line-height: 1.8em;
 
-    margin-bottom: 1.8em;
+    margin-bottom: 0.8em;
 
-}
-
-header, footer {
-    text-align: center;
 }
 
 h1,
@@ -134,14 +143,13 @@ h1 {
 
 h2 {
 
-    font-size: 1.6em;
-    padding: 6px;
+    font-size: 1.7em;
 
 }
 
 h3 {
 
-    font-size: 1.3em;
+    font-size: 1.4em;
 
 }
 
@@ -196,8 +204,7 @@ a:active {
         grid-template-areas: 
         "head head"
         "nav  nav"
-        "main main"
-        "aside aside"
+        "main aside"
         "foot foot";
     }
 }
@@ -208,14 +215,15 @@ a:active {
         grid-template-areas:
         "head"
         "nav"
-        "main"
         "aside"
+        "main"
         "foot";
     }
 
     nav ul {
         flex-flow: column nowrap;
         text-align: center;
+        padding: 0;
     }
 
     /* thumbable */
