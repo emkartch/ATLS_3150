@@ -45,7 +45,7 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background: lightgray;
+    background: #E9F5DB;
 
     display: grid;
     width: 100vw;
@@ -63,7 +63,7 @@ header, nav, main, aside, footer {
     padding-right: 1em;
     padding-top: 0.6em;
     padding-bottom: 0.6em;
-    border: 1px black solid;
+    border: 1px #F5F5F5 solid;
 }
 
 header, footer {
@@ -72,27 +72,27 @@ header, footer {
 
 header {
     grid-area: head;
-    background: lightcoral;
+    background: #718355;
 }
 
 nav {
     grid-area: nav;
-    background: lightseagreen;
+    background: #97A97C;
 }
 
 main {
     grid-area: main;
-    background: lightblue;
+    background: #CFE1B9;
 }
 
 #aside {
     grid-area: aside;
-    background: lightgoldenrodyellow;
+    background: #E9F5DB;
 }
 
 footer {
     grid-area: foot;
-    background: lightsalmon;
+    background: #97A97C;
 }
 
 aside img {
@@ -105,7 +105,7 @@ aside img {
 
 body {
 
-    background-color: #FFDEE3;
+    background-color: #F5F5F5;
 
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -119,8 +119,8 @@ p {
 
     /* super important */
     line-height: 1.8em;
-
-    margin-bottom: 0.8em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 
 }
 
@@ -168,8 +168,8 @@ nav ul li {
 nav ul a {
 
     text-decoration: none;
-    /*font-size: 1.8em;*/
     margin: 10px;
+    font-size: 1.1em;
 
 }
 
@@ -182,19 +182,20 @@ a:link {
 
 a:visited {
 
-    color: #2C0864;
+    color: darkblue;
 
 }
 
 a:hover {
 
-    background: #dbad8f;
+    background: black;
+    color: #F5F5F5;
 
 }
 
 a:active {
 
-    color: #992667;
+    color: purple;
 
 }
 
@@ -231,7 +232,7 @@ a:active {
         display: block;
         padding: 10px 5px;
         margin: 5px;
-        border: 1px black solid;
-        background: white;
+        border: 1px #F5F5F5 solid;
+        background: #F5F5F5;
     }
 }
