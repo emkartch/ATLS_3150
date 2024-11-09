@@ -77,7 +77,7 @@ header {
 
 nav {
     grid-area: nav;
-    background: #B5C99A;
+    background: #97A97C;
 }
 
 main {
@@ -195,7 +195,7 @@ a:hover {
 
 a:active {
 
-    color: purple;
+    color: darkmagenta;
 
 }
 
