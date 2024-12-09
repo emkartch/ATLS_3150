@@ -204,7 +204,7 @@ section span {
     visibility: hidden;
 }
 
-#sublist {
+.sublist {
 
     list-style-type: none;
 
