@@ -120,6 +120,8 @@ aside {
     margin-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 0.3em;
+    padding-top: 0.3em;
 }
 
 #page-nav {
@@ -156,12 +158,6 @@ aside {
 
 }
 
-/* #page-nav li {
-
-    padding: 0.3em;
-
-} */
-
 footer {
     background: #A2D2FF;
 }
@@ -176,13 +172,6 @@ p {
     padding: 0;
 
 }
-
-/* aside p {
-
-    margin: 0;
-    padding: 0;
-
-} */
 
 footer p {
 
@@ -209,12 +198,6 @@ section span {
     list-style-type: none;
 
 }
-
-/* #acronym {
-
-    list-style-type: none;
-
-} */
 
 dt {
 
@@ -297,10 +280,12 @@ hr {
 
 }
 
-pre, code {
+pre {
 
     margin: 0;
     padding: 0;
+    display: block;
+    width: 60px;
 
 }
 
@@ -427,18 +412,9 @@ a:active {
         position: static;
     }
 
-    /* #page-nav {
-
-        margin-left: 2em;
-
+    section span {
+        top: 0;
     }
-
-    main {
-
-        margin-right: 2em;
-        max-width: 
-
-    } */
 
 }
 
@@ -476,7 +452,7 @@ a:active {
     .wrapper {
 
         flex-direction: column;
-        margin: 1em auto;
+        margin: 1em;
 
     }
 
@@ -492,9 +468,7 @@ a:active {
 
     }
 
-    /* #page-nav a:visited {
-
-        color: #4621CC;
-    
-    } */
+    section span {
+        top: 0;
+    }
 }
